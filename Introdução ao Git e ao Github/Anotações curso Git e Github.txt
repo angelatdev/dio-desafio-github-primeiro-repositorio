@@ -1,0 +1,39 @@
+Comandos Terminal:
+
+mkdir: Criar pasta
+cd: Abrir pasta
+touch: Criar arquivo vazio
+rm -rf: Remover recursivamente e à força um diretório e seu conteúdo
+
+Comandos Git
+
+git init: Inicializar repositório (Transformar pasta em repositório git)
+git remote: Conectar repositório local com repositório remoto
+	git remote add origin URL 
+git clone: Clonar repositório remoto
+	git clone URL nome-do-diretorio-local
+	git clone URL --branch nome-da-branch --single-branch (Clonar apenas uma branch)
+git status: Mostrar o status da árvore de trabalho e área de preparação
+	Também mostra o estado dos arquivos
+git add: Adicionar arquivo na área de preparação
+	git add nome-do-arquivo
+	git add. (Adiciona todos os arquivos disponíveis)
+git commit: Capturar o estado de um projeto naquele momento
+	git commit -m"descrição do commit"
+	git commit --amend -m"descrição-do-commit" (Substitui descrição do último commit)
+git log: Mostrar o histórico de commits
+git restore: Restaurar arquivo para o último estado commitado
+	git restore --staged nome-do-arquivo (Remove arquivo da área de preparação)
+git reset: Retornar repositório para um estado de commit especificado
+	git reset --soft hash-do-commit (Pega os arquivos dos commits posteriores e adiciona na área de preparação)
+	git reset --mixed hash-do-commit (Pega os arquivos dos commits posteriores e adiciona na árvore de trabalho, indicando como "Untracked Files"
+	git reset --hard hash-do-commit (Ignora todos os arquivos dos commits posteriores)
+	git reset nome-do-arquivo (Remove arquivo da área de preparação)
+git pull: Puxar as alterações feitas no repositório remoto para o repositório local
+git checkout: Criar uma nova branch e entrar nela
+	git checkout -b nome-da-branch
+git branch: Listar todas as branchs
+	git branch -v (Mostrar o último commit de cada branch)
+	git branch -d nome-da-branch (Deletar branch especificada)
+git merge: Mesclar branch atual com outra branch especificada
+	git merge nome-da-branch
