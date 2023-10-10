@@ -1,11 +1,11 @@
-Comandos Terminal:
+Comandos usados no Terminal:
 
 mkdir: Criar pasta
 cd: Abrir pasta
 touch: Criar arquivo vazio
 rm -rf: Remover recursivamente e à força um diretório e seu conteúdo
 
-Comandos Git
+Alguns comandos Git abordados:
 
 git init: Inicializar repositório (Transformar pasta em repositório git)
 git remote: Conectar repositório local com repositório remoto
@@ -21,6 +21,10 @@ git add: Adicionar arquivo na área de preparação
 git commit: Capturar o estado de um projeto naquele momento
 	git commit -m"descrição do commit"
 	git commit --amend -m"descrição-do-commit" (Substitui descrição do último commit)
+git remote: Conectar repositório local com repositório remoto especificado (Caso tenha sido criado localmente e não clonado)
+	git remote add origin link-do-repositório-remoto
+git push: Enviar as alterações feitas no repositório local para o repositório remoto
+	git push -u origin main
 git log: Mostrar o histórico de commits
 git restore: Restaurar arquivo para o último estado commitado
 	git restore --staged nome-do-arquivo (Remove arquivo da área de preparação)
